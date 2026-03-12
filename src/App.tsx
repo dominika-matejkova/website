@@ -138,7 +138,7 @@ function App() {
             </div>
             <div className="relative max-w-5xl mx-auto px-6 py-16 md:py-12 flex flex-col items-center text-center md:flex-row md:items-center md:text-left md:gap-12">
                 <img
-                    src="/profile.png"
+                    src={`${import.meta.env.BASE_URL}profile.png`}
                     alt="Dominika Matějková — professional portrait"
                     className="w-36 h-36 md:w-52 md:h-52 rounded-full border-4 border-white/40 object-cover mb-8 md:mb-0 md:shrink-0 shadow-xl"
                     onError={(e) => {
