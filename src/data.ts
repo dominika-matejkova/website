@@ -136,16 +136,6 @@ export const skills = [
     'Mentoring & Teaching',
 ]
 
-// One-line repo blurbs, based on each repo's contents; mailstep-api is empty so has none
-export const repos = [
-    { name: 'Tesena-Bootcamp', blurb: 'Portfolio repo from the Tesena testing bootcamp', stat: '13 contributions' },
-    { name: 'markdown-portfolio', blurb: 'GitHub Learning Lab exercise on Markdown', stat: '9 contributions' },
-    { name: 'applifting-qa-eng', blurb: 'Gherkin scenarios, Detox + Cucumber automation, and a website test report (take-home exercise)', stat: '' },
-    { name: 'etnetera-test', blurb: 'Gherkin scenarios, a website test report, and Playwright automation (take-home exercise)', stat: '' },
-    { name: 'mailstep-api', blurb: '', stat: '' },
-    { name: 'pqaa_detox', blurb: 'Fork of a Detox mobile-automation course project', stat: '' },
-]
-
 export const certifications = [
     { name: 'ISTQB CTFL', issuer: 'ISTQB \u2013 International Software Testing Qualifications Board', date: 'Jun 2021' },
     { name: 'Google Analytics I', issuer: 'Dobr\u00fd web', date: 'Mar 2019' },
