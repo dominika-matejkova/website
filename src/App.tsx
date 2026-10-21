@@ -15,7 +15,7 @@ import {
 } from 'lucide-react'
 import { PDFDownloadLink } from '@react-pdf/renderer'
 import { CVDocument } from './CV'
-import { experiences, skills, certifications, languages, aboutText } from './data'
+import { experiences, skills, certifications, languages, aboutText, headline, availability, repos } from './data'
 
 // bg-black/25 keeps white label text >= 4.5:1 anywhere on the hero gradient
 const pillButton = 'flex items-center gap-2 bg-black/25 hover:bg-black/35 rounded-full transition-colors'
@@ -47,9 +47,10 @@ function App() {
                     <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-3">
                         Dominika Matějková
                     </h1>
-                    <p className="text-xl md:text-2xl font-medium text-white/90 mb-4">
-                        Test Engineer · QA Specialist · Mentor
+                    <p className="text-xl md:text-2xl font-medium text-white/90 mb-2">
+                        {headline}
                     </p>
+                    <p className="text-white/90 mb-4">{availability}</p>
                     <div className="flex items-center gap-2 text-white/90 mb-6 justify-center md:justify-start">
                         <MapPin size={18} />
                         <span>Hořovice, Central Bohemia, Czechia</span>
@@ -241,15 +242,8 @@ function App() {
                     </a>
                     <span className="text-sm text-slate-600 dark:text-slate-400">41 contributions</span>
                 </div>
-                <div className="flex flex-wrap gap-3">
-                    {[
-                        { name: 'Tesena-Bootcamp', desc: '13 contributions' },
-                        { name: 'markdown-portfolio', desc: '9 contributions' },
-                        { name: 'applifting-qa-eng', desc: '' },
-                        { name: 'etnetera-test', desc: '' },
-                        { name: 'mailstep-api', desc: '' },
-                        { name: 'pqaa_detox', desc: '' },
-                    ].map((repo) => (
+                <div className="grid sm:grid-cols-2 gap-3">
+                    {repos.map((repo) => (
                         <a
                             key={repo.name}
                             href={`https://github.com/dominika-matejkova/${repo.name}`}
@@ -258,7 +252,8 @@ function App() {
                             className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 hover:border-cyan-500 transition-colors"
                         >
                             <p className="font-mono text-sm font-medium text-slate-800 dark:text-slate-100">{repo.name}</p>
-                            {repo.desc && <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{repo.desc}</p>}
+                            {repo.blurb && <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">{repo.blurb}</p>}
+                            {repo.stat && <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{repo.stat}</p>}
                         </a>
                     ))}
                 </div>

@@ -1,18 +1,22 @@
+export const headline = 'Senior QA Engineer · Mentor'
+
+export const availability = 'Available for remote QA contracts'
+
 export const aboutText =
-    'QA professional with over 11 years of experience spanning test engineering, quality assurance, ' +
-    'product management, and people onboarding. Currently a Test Engineer at Digitoo.ai, with a strong ' +
+    'QA professional with 7+ years in software testing (11+ years in IT), spanning test engineering, quality assurance, ' +
+    'product management, and people onboarding. Currently a freelance QA Test Engineer at Digitoo.ai, with a strong ' +
     'background working at companies like Groupon, Monterail, Integromat, and Unicorn Systems. ' +
     'Passionate about software quality, mentoring the next generation of testers through teaching at ' +
     'CodersLab, and bridging the gap between technical teams and business goals. ISTQB CTFL certified.'
 
 export const experiences = [
     {
-        title: 'Test Engineer',
+        title: 'Freelance QA Test Engineer',
         company: 'Digitoo.ai',
         period: 'Dec 2025 \u2013 Present',
         location: 'Remote',
         description:
-            'Ensuring software quality and reliability at a document-processing AI platform. Designing and executing test strategies for core product features across the Digitoo application.',
+            'Ensuring software quality and reliability at a document-processing AI platform. Testing the web UI, APIs/backend, and AI-powered features. Defined the test strategy for core product features. Tools include Cypress.',
         current: true,
     },
     {
@@ -21,7 +25,7 @@ export const experiences = [
         period: 'Sep 2025 \u2013 Dec 2025',
         location: 'Prague, Czechia',
         description:
-            'Led the onboarding department, streamlining processes for new hires in a logistics and supply-chain company. Managed end-to-end onboarding workflows and cross-team coordination.',
+            'Led the onboarding department, streamlining processes for new hires in a logistics and supply-chain company. Managed end-to-end onboarding workflows and cross-team coordination. Led an international onboarding team of four across three countries and trained three new team members.',
     },
     {
         title: 'Onboarding Specialist',
@@ -29,7 +33,7 @@ export const experiences = [
         period: 'Jan 2025 \u2013 Dec 2025',
         location: 'Prague, Czechia',
         description:
-            'Designed and delivered onboarding programs for new employees. Created training materials and documentation to ensure smooth integration into the company culture and workflows.',
+            'Designed and delivered onboarding programs for new employees. Created training materials and documentation to ensure smooth integration into the company culture and workflows. Migrated about 40 clients to a new version of the add-on.',
     },
     {
         title: 'Lector & Student Mentor \u2013 Manual Testing',
@@ -53,7 +57,7 @@ export const experiences = [
         period: 'Mar 2022 \u2013 Mar 2024',
         location: 'Remote',
         description:
-            'Worked remotely as a senior QA engineer for a software house building web and mobile products for international clients. Led testing efforts, defined QA processes, and collaborated with cross-functional development teams.',
+            'Worked remotely as a senior QA engineer for a software house building web and mobile products for international clients. Led testing efforts, defined QA processes, and collaborated with cross-functional development teams. Tested mobile (React Native, Android/iOS) and web apps on the Mustad Hoofcare project, with Detox automation. Held concurrently with Etnetera Core (Oct 2023 – Feb 2024).',
     },
     {
         title: 'Test Manager',
@@ -61,7 +65,7 @@ export const experiences = [
         period: 'Oct 2023 \u2013 Feb 2024',
         location: 'Prague, Czechia',
         description:
-            'Managed testing activities and QA team for client projects at a Czech technology consultancy. Defined test strategies, coordinated test execution, and reported on quality metrics.',
+            'Managed testing activities and QA team for client projects at a Czech technology consultancy. Defined test strategies, coordinated test execution, and reported on quality metrics. Wrote the test strategy, master test plan, and Gherkin stories for a client in Germany. Held concurrently with Monterail.',
     },
     {
         title: 'QA Test Engineer',
@@ -69,7 +73,7 @@ export const experiences = [
         period: 'Jun 2021 \u2013 Feb 2022',
         location: 'Prague, Czechia',
         description:
-            'Performed manual and exploratory testing for various client projects at a specialized QA consultancy. Participated in the Tesena Bootcamp and contributed to testing best practices.',
+            'Performed manual and exploratory testing for various client projects at a specialized QA consultancy. Participated in the Tesena Bootcamp and contributed to testing best practices. Tested SQL/BigQuery reports for Škoda Auto VX and automated tests with Playwright.',
     },
     {
         title: 'Quality Assurance Engineer',
@@ -77,7 +81,7 @@ export const experiences = [
         period: 'Apr 2020 \u2013 Jun 2021',
         location: 'Prague, Czechia',
         description:
-            'Tested the Integromat (now Make) automation platform \u2014 an integration tool connecting hundreds of apps. Ensured quality of workflows, API connectors, and the user interface.',
+            'Tested the Integromat (now Make) automation platform \u2014 an integration tool connecting hundreds of apps. Ensured quality of workflows, API connectors, and the user interface. Tested the GUI and APIs (Postman), reviewed code and gave developers API guidance, and trained new hires.',
     },
     {
         title: 'Country Product Manager',
@@ -88,12 +92,12 @@ export const experiences = [
             'Managed the Czech product portfolio for the Monster job-search platform. Oversaw product localization, market analysis, and coordinated with international teams on feature rollouts.',
     },
     {
-        title: 'Configuration Manager / Test Leader',
+        title: 'Configuration Manager / Test Leader / Documentarist',
         company: 'Unicorn Systems',
         period: 'Apr 2017 \u2013 Dec 2018',
         location: 'Prague, Czechia',
         description:
-            'Led testing and configuration management activities for enterprise IT projects. Managed documentation, version control of configurations, and coordinated test execution across teams.',
+            'Led testing and configuration management activities for enterprise IT projects. Managed documentation, version control of configurations, and coordinated test execution across teams. Led a QA team of four, managed UAT and deployments, and wrote CZ/EN documentation for a regulated energy-sector operator, verifying the application against the initial documentation and requirements.',
     },
     {
         title: 'Customer Support & Systems Administrator',
@@ -114,14 +118,32 @@ export const experiences = [
 ]
 
 export const skills = [
-    'Quality Assurance',
-    'Manual Testing',
-    'Test Management',
-    'Onboarding',
-    'ISTQB CTFL',
-    'Customer Support',
-    'Project Coordination',
+    'Functional, regression & exploratory testing',
+    'Web, iOS & Android testing',
+    'Test strategy & test plans',
+    'Test cases (incl. Gherkin)',
+    'Defect management',
+    'API testing (Postman)',
+    'SQL / BigQuery report testing',
+    'Test automation (Detox, Cypress, Playwright)',
+    'Jira & Confluence',
+    'TestRail',
+    'Testmo',
+    'TestFlight',
+    'MS App Center',
+    'BrowserStack App Live',
+    'Sentry',
     'Mentoring & Teaching',
+]
+
+// One-line repo blurbs, based on each repo's contents; mailstep-api is empty so has none
+export const repos = [
+    { name: 'Tesena-Bootcamp', blurb: 'Portfolio repo from the Tesena testing bootcamp', stat: '13 contributions' },
+    { name: 'markdown-portfolio', blurb: 'GitHub Learning Lab exercise on Markdown', stat: '9 contributions' },
+    { name: 'applifting-qa-eng', blurb: 'Gherkin scenarios, Detox + Cucumber automation, and a website test report (take-home exercise)', stat: '' },
+    { name: 'etnetera-test', blurb: 'Gherkin scenarios, a website test report, and Playwright automation (take-home exercise)', stat: '' },
+    { name: 'mailstep-api', blurb: '', stat: '' },
+    { name: 'pqaa_detox', blurb: 'Fork of a Detox mobile-automation course project', stat: '' },
 ]
 
 export const certifications = [

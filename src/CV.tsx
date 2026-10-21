@@ -1,5 +1,5 @@
 import { Document, Page, Text, View, StyleSheet, Link, Font } from '@react-pdf/renderer'
-import { experiences, skills, certifications, languages, aboutText } from './data'
+import { experiences, skills, certifications, languages, aboutText, headline, availability } from './data'
 
 Font.register({
     family: 'OpenSans',
@@ -163,7 +163,7 @@ export function CVDocument() {
                 {/* Header */}
                 <View style={s.header}>
                     <Text style={s.name}>Dominika Matějková</Text>
-                    <Text style={s.jobTitle}>Test Engineer · QA Specialist · Mentor</Text>
+                    <Text style={s.jobTitle}>{headline} · {availability}</Text>
                     <View style={s.contactRow}>
                         <Text style={s.contact}>Hořovice, Czechia</Text>
                         <Link src="mailto:dominika.matejkova@outlook.cz" style={s.contact}>
