@@ -6,7 +6,7 @@ Personal portfolio website and auto-generated PDF CV, built with React, Vite, an
 
 ## Features
 
-- Responsive single-page portfolio (hero, about, experience timeline, skills, certifications, languages, education, GitHub activity)
+- Responsive single-page portfolio (hero, about, experience timeline, skills, certifications, languages, education)
 - One-click CV download — PDF generated client-side from the same data source as the website
 - Profile photo with graceful fallback to initials
 - GitHub Pages deployment via GitHub Actions

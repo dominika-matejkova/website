@@ -4,18 +4,16 @@ import {
     Briefcase,
     GraduationCap,
     Award,
-    Github,
     Linkedin,
     Globe,
     Code,
     Users,
-    BookOpen,
     Mail,
     Download,
 } from 'lucide-react'
 import { PDFDownloadLink } from '@react-pdf/renderer'
 import { CVDocument } from './CV'
-import { experiences, skills, certifications, languages, aboutText } from './data'
+import { experiences, skills, certifications, languages, aboutText, headline, availability } from './data'
 
 // bg-black/25 keeps white label text >= 4.5:1 anywhere on the hero gradient
 const pillButton = 'flex items-center gap-2 bg-black/25 hover:bg-black/35 rounded-full transition-colors'
@@ -47,9 +45,10 @@ function App() {
                     <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-3">
                         Dominika Matějková
                     </h1>
-                    <p className="text-xl md:text-2xl font-medium text-white/90 mb-4">
-                        Test Engineer · QA Specialist · Mentor
+                    <p className="text-xl md:text-2xl font-medium text-white/90 mb-2">
+                        {headline}
                     </p>
+                    <p className="text-white/90 mb-4">{availability}</p>
                     <div className="flex items-center gap-2 text-white/90 mb-6 justify-center md:justify-start">
                         <MapPin size={18} />
                         <span>Hořovice, Central Bohemia, Czechia</span>
@@ -63,15 +62,6 @@ function App() {
                         >
                             <Linkedin size={18} />
                             LinkedIn
-                        </a>
-                        <a
-                            href="https://github.com/dominika-matejkova"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`${pillButton} px-5 py-2.5 font-medium`}
-                        >
-                            <Github size={18} />
-                            GitHub
                         </a>
                         <PDFDownloadLink
                             document={<CVDocument />}
@@ -222,48 +212,6 @@ function App() {
                 </div>
             </div>
         </section>
-        {/* GitHub */}
-        <section className="max-w-5xl mx-auto px-6 pb-16">
-            <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-8">
-                <h2 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                    <BookOpen className="text-slate-500 dark:text-slate-400" size={24} />
-                    GitHub Activity
-                </h2>
-                <div className="flex items-center gap-4 mb-4">
-                    <a
-                        href="https://github.com/dominika-matejkova"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-cyan-700 dark:text-cyan-400 underline underline-offset-2 font-medium flex items-center gap-2"
-                    >
-                        <Github size={18} />
-                        dominika-matejkova
-                    </a>
-                    <span className="text-sm text-slate-600 dark:text-slate-400">41 contributions</span>
-                </div>
-                <div className="flex flex-wrap gap-3">
-                    {[
-                        { name: 'Tesena-Bootcamp', desc: '13 contributions' },
-                        { name: 'markdown-portfolio', desc: '9 contributions' },
-                        { name: 'applifting-qa-eng', desc: '' },
-                        { name: 'etnetera-test', desc: '' },
-                        { name: 'mailstep-api', desc: '' },
-                        { name: 'pqaa_detox', desc: '' },
-                    ].map((repo) => (
-                        <a
-                            key={repo.name}
-                            href={`https://github.com/dominika-matejkova/${repo.name}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-4 py-3 hover:border-cyan-500 transition-colors"
-                        >
-                            <p className="font-mono text-sm font-medium text-slate-800 dark:text-slate-100">{repo.name}</p>
-                            {repo.desc && <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">{repo.desc}</p>}
-                        </a>
-                    ))}
-                </div>
-            </div>
-        </section>
         {/* Contact CTA */}
         <section className="bg-gradient-to-br from-indigo-700 via-cyan-700 to-indigo-700 dark:from-indigo-900 dark:via-cyan-900 dark:to-indigo-900 text-white py-16">
             <div className="max-w-5xl mx-auto px-6 text-center">
@@ -280,15 +228,6 @@ function App() {
                     >
                         <Linkedin size={18} />
                         Connect on LinkedIn
-                    </a>
-                    <a
-                        href="https://github.com/dominika-matejkova"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`${pillButton} px-6 py-3 font-semibold`}
-                    >
-                        <Github size={18} />
-                        View GitHub
                     </a>
                     <a
                         href="mailto:dominika.matejkova@outlook.cz"
